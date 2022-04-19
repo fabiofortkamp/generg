@@ -1,0 +1,1 @@
+# Análise de máquinas geradoras em série e paralelo {#geradoras}

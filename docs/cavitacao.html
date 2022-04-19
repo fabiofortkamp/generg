@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Capítulo 5 Cavitação | Máquinas Hidráulicas e Sistemas de Geração de Energia</title>
+  <meta name="description" content="Capítulo 5 Cavitação | Máquinas Hidráulicas e Sistemas de Geração de Energia" />
+  <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Capítulo 5 Cavitação | Máquinas Hidráulicas e Sistemas de Geração de Energia" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta name="github-repo" content="fabiofortkamp/generg" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Capítulo 5 Cavitação | Máquinas Hidráulicas e Sistemas de Geração de Energia" />
+  
+  
+  
+
+<meta name="author" content="Fábio P. Fortkamp" />
+
+
+<meta name="date" content="2022-04-19" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="semelhanca.html"/>
+<link rel="next" href="bombas.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Ger. Energ.</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introdução<span></span></a></li>
+<li class="chapter" data-level="2" data-path="funcionamento.html"><a href="funcionamento.html"><i class="fa fa-check"></i><b>2</b> Grandezas de funcionamento de máquinas hidráulicas<span></span></a></li>
+<li class="chapter" data-level="3" data-path="equacao.html"><a href="equacao.html"><i class="fa fa-check"></i><b>3</b> Equação fundamental<span></span></a></li>
+<li class="chapter" data-level="4" data-path="semelhanca.html"><a href="semelhanca.html"><i class="fa fa-check"></i><b>4</b> Semelhança e Coeficientes Adimensionais para máquinas hidráulicas<span></span></a></li>
+<li class="chapter" data-level="5" data-path="cavitacao.html"><a href="cavitacao.html"><i class="fa fa-check"></i><b>5</b> Cavitação<span></span></a></li>
+<li class="chapter" data-level="6" data-path="bombas.html"><a href="bombas.html"><i class="fa fa-check"></i><b>6</b> Bombas hidráulicas de fluxo<span></span></a></li>
+<li class="chapter" data-level="7" data-path="ventiladores.html"><a href="ventiladores.html"><i class="fa fa-check"></i><b>7</b> Ventiladores<span></span></a></li>
+<li class="chapter" data-level="8" data-path="turbinas.html"><a href="turbinas.html"><i class="fa fa-check"></i><b>8</b> Ensaios e curvas características de turbinas hidráulicas<span></span></a></li>
+<li class="chapter" data-level="9" data-path="geradoras.html"><a href="geradoras.html"><i class="fa fa-check"></i><b>9</b> Análise de máquinas geradoras em série e paralelo<span></span></a></li>
+<li class="chapter" data-level="10" data-path="eolicas.html"><a href="eolicas.html"><i class="fa fa-check"></i><b>10</b> Turbinas eólicas<span></span></a></li>
+<li class="chapter" data-level="11" data-path="modeagem.html"><a href="modeagem.html"><i class="fa fa-check"></i><b>11</b> Modelagem matemática de máquinas hidráulicas<span></span></a></li>
+<li class="chapter" data-level="12" data-path="hidroeletricas.html"><a href="hidroeletricas.html"><i class="fa fa-check"></i><b>12</b> Análise termoeconômica de usinas hidroelétricas<span></span></a></li>
+<li class="chapter" data-level="13" data-path="termoeletricas.html"><a href="termoeletricas.html"><i class="fa fa-check"></i><b>13</b> Análise termoeconômica de usinas termoelétricas<span></span></a></li>
+<li class="chapter" data-level="14" data-path="solar.html"><a href="solar.html"><i class="fa fa-check"></i><b>14</b> Análise termoeconômica da geração eólica e solar<span></span></a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Máquinas Hidráulicas e Sistemas de Geração de Energia</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="cavitacao" class="section level1 hasAnchor" number="5">
+<h1><span class="header-section-number">Capítulo 5</span> Cavitação<a href="cavitacao.html#cavitacao" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="semelhanca.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="bombas.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/fabiofortkamp/generg/edit/master/05-cavitacao.Rmd",
+"text": "Editar"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": "https://github.com/fabiofortkamp/generg/blob/master/05-cavitacao.Rmd",
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
